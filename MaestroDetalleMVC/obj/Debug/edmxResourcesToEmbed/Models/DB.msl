@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MaestroDetalleMVCModelStoreContainer" CdmEntityContainer="MaestroDetalleMVCEntities2">
+    <EntitySetMapping Name="venta">
+      <EntityTypeMapping TypeName="MaestroDetalleMVCModel.venta">
+        <MappingFragment StoreEntitySet="venta">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="cliente" ColumnName="cliente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="concepto">
+      <EntityTypeMapping TypeName="MaestroDetalleMVCModel.concepto">
+        <MappingFragment StoreEntitySet="concepto">
+          <ScalarProperty Name="total" ColumnName="total" />
+          <ScalarProperty Name="precioUnitario" ColumnName="precioUnitario" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+          <ScalarProperty Name="idVenta" ColumnName="idVenta" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
